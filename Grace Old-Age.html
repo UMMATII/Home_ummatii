@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Old-Age Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #8e44ad;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #6c3483;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .gallery-wrapper {
+            overflow: hidden;
+            background-color: #fff;
+            position: relative;
+            height: 300px;
+            margin-top: 80px;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 10px;
+            height: 100%;
+            animation: rotateGallery 40s linear infinite;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        @keyframes rotateGallery {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .container {
+            margin-top: 80px;
+            padding: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #8e44ad;
+        }
+
+        .contact, .address {
+            background-color: #fbeffb;
+            padding: 15px;
+            border-left: 4px solid #8e44ad;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #6c3483;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media screen and (max-width: 600px) {
+            nav a {
+                font-size: 10px;
+                display: inline-block;
+                margin: 5px 5px;
+            }
+
+            .email {
+                word-break: break-word;
+                font-size: 12px;
+            }
+
+            .gallery-wrapper {
+                height: 200px;
+            }
+
+            .gallery img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#facilities">Facilities</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<header id="home">
+    <h1>GRACE OLD-AGE HOME</h1>
+    <p>Phone: <a href="tel:+919688975038" style="color: white;">+91 96889 75038</a></p>
+</header>
+
+<div class="container">
+    <div class="section" id="about">
+        <h2>கிரேஸ் முதியோர் இல்லம்</h2>
+        <p>Run by : கிரேஸ் டிரஸ்ட்</p>
+        <p>அனைத்து வசதுகள் உள்ள, பாதுகாப்பு நிறைந்த ஆண்கள் & பெண்ணிகளுக்கான முதியோர் இல்லம்</p>
+        <p>Website: <a href="https://www.gracecidagehome.in" target="_blank">www.gracecidagehome.in</a></p>
+        <p>Email: <a class="email" href="mailto:jaaylourdu@gmail.com">jaaylourdu@gmail.com</a></p>
+    </div>
+
+    <div class="gallery-wrapper">
+        <div class="gallery">
+        <img src=".\Assets\Friendship Children\img1.jpeg" alt="Children Activity 1">
+        <img src=".\Assets\Friendship Children\img2.jpg" alt="Children Activity 2">
+        <img src=".\Assets\Friendship Children\img3.jpg" alt="Children Activity 3">
+        <img src=".\Assets\Friendship Children\img4.jpg" alt="Children Activity 4">
+        <img src=".\Assets\Friendship Children\img1.jpeg" alt="Children Activity 1 Repeat">
+        <img src=".\Assets\Friendship Children\img2.jpg" alt="Children Activity 2 Repeat">
+        <img src=".\Assets\Friendship Children\img3.jpg" alt="Children Activity 3 Repeat">
+        <img src=".\Assets\Friendship Children\img4.jpg" alt="Children Activity 4 Repeat">
+        </div>
+    </div>
+
+    <div class="section" id="facilities">
+        <h2>THE HOME PROVIDES</h2>
+        <p>Outstanding care to elderly people who do not get desired care at home.</p>
+        <p>They offer a peaceful environment for retirement and old age.</p>
+        <ul>
+            <li>Prayer Hall</li>
+            <li>Meditation Room</li>
+            <li>Counseling Facilities</li>
+        </ul>
+
+        <h3>Facilities</h3>
+        <ul>
+            <li>Wheelchair Accessibility</li>
+            <li>Friendly Touch and Support</li>
+            <li>Spacious Dining Hall</li>
+            <li>Safety for Care</li>
+        </ul>
+    </div>
+
+    <div class="contact" id="contact">
+        <h2>Kindly Support Us</h2>
+        <p>Phone: <a href="tel:+919688975018">+91 96889 75018</a></p>
+    </div>
+
+    <div class="address">
+        <h3>Address</h3>
+        <p>VA.R Kalyana Mandapam, No:8, 3rd St,</p>
+        <p>Near Thiruvanaikovil, Srinivasa Nagar,</p>
+        <p>Thiruvanaikoil, Tiruchirappalli, Tamil Nadu 620005</p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 Ummatii Company. All rights reserved.
+</footer>
+
+</body>
+</html>

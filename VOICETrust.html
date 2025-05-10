@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Friendship Children's Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #006400;
+      color: white;
+      padding: 1rem 0.5rem;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0.3rem;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 1.6rem;
+      margin-top: 4rem;
+      font-weight: bold;
+      color: #004d00;
+    }
+
+    .container {
+      padding: 1rem;
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #004d00;
+      margin: 1rem 0;
+    }
+
+    .contact, .address {
+      background-color: #e0ffe0;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-left: 5px solid #008000;
+    }
+
+    .scroll-wrapper {
+      overflow: hidden;
+      margin-top: 2rem;
+    }
+
+    .image-track {
+      display: flex;
+      width: max-content;
+      animation: scrollImages 40s linear infinite;
+    }
+
+footer {
+            background-color: #388E3C;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+    .image-track img {
+      height: 200px;
+      width: 300px;
+      margin-right: 20px;
+      border-radius: 10px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    @keyframes scrollImages {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      nav {
+        font-size: 0.7rem;
+        justify-content: center;
+      }
+      .image-track img {
+        width: 90vw;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#home">HOME</a>
+      <a href="#programs">PROGRAMS</a>
+      <a href="#contacts">CONTACTS</a>
+    </nav>
+  </header>
+
+  <div class="title">FRIENDSHIP CHILDREN'S HOME</div>
+
+  <div class="container">
+    <p class="highlight">VOICE Trust WORKS IN HARMONY WITH NATURE TO PROTECT, EMPOWER & EDUCATE VULNERABLE PEOPLE IN TAMIL NADU</p>
+
+    <p>
+      Friendship Children's Home began its journey in 2006, accepting 15 parentless children in Siruganur, Trichy District. This initiative was supported by AEMa children empowering organization from France.
+    </p>
+    <p>
+      In 2009, the orphanage received approval from the District Collector to operate officially. It was registered under the Juvenile Justice Act (J.J. Act) in 2011 and is now guided by the District Social Welfare Office and the District Child Protection Unit.
+    </p>
+
+    <div class="highlight">A LITTLE HELP FROM YOU CAN MEAN THE WORLD TO A CHILD IN NEED</div>
+
+    <!-- Auto-scrolling horizontal gallery -->
+    <div class="scroll-wrapper">
+      <div class="image-track">
+        <img src=".\Assets\Manitham trust\img1.jpg" alt="Gallery Image 1" />
+            <img src=".\Assets\Manitham trust\img2.jpg" alt="Gallery Image 2" />
+            <img src=".\Assets\Manitham trust\img3.jpg" alt="Gallery Image 3" />
+            <img src=".\Assets\Manitham trust\img4.jpg" alt="Gallery Image 4" />
+            <!-- Duplicate set for seamless loop -->
+            <img src=".\Assets\Manitham trust\img1.jpg" alt="Gallery Image 1" />
+            <img src=".\Assets\Manitham trust\img2.jpg" alt="Gallery Image 2" />
+            <img src=".\Assets\Manitham trust\img3.jpg" alt="Gallery Image 3" />
+            <img src=".\Assets\Manitham trust\img4.jpg" alt="Gallery Image 4" />
+      </div>
+    </div>
+
+    <div class="contact" id="contacts">
+      <p><strong>Email:</strong> connect@voice-trust.org</p>
+      <p><strong>Phone:</strong> +91 431 2250809</p>
+      <p><strong>Mobile:</strong> 94431 43380</p>
+      <p><strong>Instagram:</strong> @voice_trust</p>
+    </div>
+
+    <div class="address">
+      <strong>Address:</strong>
+      <p>
+        VOICE Trust<br />
+        18, Thathachariyar Residency,<br />
+        Mambalasalai, Thiruvanaikoil Post,<br />
+        Trichy - 620 005,<br />
+        Tamil Nadu, India
+      </p>
+    </div>
+  </div>
+
+    <footer>
+        &copy; 2025 Ummatii Company. All rights reserved.
+    </footer>
+</body>
+</html>

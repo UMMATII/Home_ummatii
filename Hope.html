@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abirami Women Development Trust</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        nav {
+            background-color: #388E3C;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 5px;
+            font-size: 16px;
+        }
+
+        header {
+            background-color: #388E3C;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 60px;
+        }
+
+        .container {
+            margin: 20px auto 80px;
+            max-width: 800px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            background-color: #f0fff4;
+            padding: 20px;
+            border-left: 5px solid #4CAF50;
+            border-radius: 8px;
+        }
+
+        .section h3, .section h2 {
+            color: #388E3C;
+        }
+
+        .section ul {
+            padding-left: 20px;
+        }
+
+        .section li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .contact {
+            background-color: #fff3e0;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .contact a {
+            text-decoration: none;
+            color: #d84315;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #388E3C;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Auto-scrolling gallery styles */
+        .scroll-wrapper {
+            overflow: hidden;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .image-track {
+            display: flex;
+            width: max-content;
+            animation: scrollLeft 40s linear infinite;
+        }
+
+        .image-track img {
+            height: 200px;
+            width: 300px;
+            margin-right: 20px;
+            border-radius: 10px;
+            flex-shrink: 0;
+            object-fit: cover;
+        }
+
+        @keyframes scrollLeft {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                display: block;
+                padding: 12px;
+                font-size: 16px;
+            }
+
+            .image-track img {
+                width: 90vw;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#vision">Vision</a>
+        <a href="#mission">Mission</a>
+        <a href="#objective">Objective</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header>
+        Hope Orphanage Home
+    </header>
+
+    <div class="container">
+
+        <div class="section" id="vision">
+            <h3>Our Vision</h3>
+            <p>Providing love, support, and a brighter future for orphans—because every child deserves a safe and nurturing home.</p>
+        </div>
+
+        <div class="section" id="mission">
+            <h3>Our Mission</h3>
+            <p>To enhance the well-being of marginalized women and children through health, mental well-being, and human rights initiatives.</p>
+        </div>
+
+        <div class="section" id="objective">
+            <h3>Our Objective</h3>
+            <p>Free spoken English classes, skill development, and placement assistance for better career building.</p>
+        </div>
+
+        <div class="section" id="facilities">
+            <h3>Our Facilities</h3>
+            <ul>
+                <li>Wheelchair Accessibility</li>
+                <li>World Class Infrastructure</li>
+                <li>Friendly Staff</li>
+                <li>Spacious Dining Hall</li>
+                <li>Enhanced Safety Measures</li>
+            </ul>
+        </div>
+
+        <div class="section" id="services">
+            <h2>Our Services</h2>
+            <div class="scroll-wrapper">
+                <div class="image-track" id="imageTrack">
+                    <img src="free-english-class.jpg" alt="Free English Class">
+                    <img src="free-training.jpg" alt="Free Training">
+                    <img src="free-driving.jpg" alt="Free Driving">
+                    <img src="free-food.jpg" alt="Free Food">
+                    <img src="social-service.jpg" alt="Social Service">
+                    <!-- Duplicate for smooth loop -->
+                    <img src="free-english-class.jpg" alt="Free English Class">
+                    <img src="free-training.jpg" alt="Free Training">
+                    <img src="free-driving.jpg" alt="Free Driving">
+                    <img src="free-food.jpg" alt="Free Food">
+                    <img src="social-service.jpg" alt="Social Service">
+                </div>
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <h3>Office Location</h3>
+            <p>Abirami Women Development Trust</p>
+            <p>R. R. Complex, Abirami Road, Trichy-17</p>
+            <p>Phone: <a href="tel:+918870015801">+91-8870015801</a></p>
+            <p><a href="https://yourwebsite.com" target="_blank">Visit Our Website</a></p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Abirami Women Development Trust. All rights reserved.
+    </footer>
+
+</body>
+</html>

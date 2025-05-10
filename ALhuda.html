@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AL HUDHA Orphanage</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #006400;
+      color: white;
+      padding: 1rem 0.5rem;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0.3rem;
+    }
+    .title {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-top: 8rem;
+      font-weight: bold;
+    }
+    .gallery-wrapper {
+      overflow: hidden;
+      background-color: #fff;
+      position: relative;
+      height: 300px;
+    }
+    .gallery {
+      display: flex;
+      gap: 10px;
+      height: 100%;
+      animation: rotateGallery 40s linear infinite;
+    }
+    .gallery img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    @keyframes rotateGallery {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .container {
+      padding: 1rem;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+    }
+    .highlight {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #004d00;
+    }
+    .contact, .address {
+      background-color: #e0ffe0;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-left: 5px solid #008000;
+    }
+    @media screen and (max-width: 600px) {
+      nav {
+        font-size: 0.7rem;
+        justify-content: center;
+      }
+      .gallery-wrapper {
+        height: 200px;
+      }
+      .gallery img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+
+  <header>
+    <nav>
+      <a href="#home">HOME</a>
+      <a href="#programs">PROGRAMS</a>
+      <a href="#contacts">CONTACTS</a>
+    </nav>
+  </header>
+
+  <div class="title">AL HUDHA Orphanage</div>
+  <div class="container">
+    <p class="highlight">Every CHILD and WOMAN matters!</p>
+    <p>Empowering young lives through education, nutrition and shelter.</p>
+<div class="gallery-wrapper">
+    <div class="gallery">
+<img src=".\Assets\AL Hudha\img1.jpg" alt="Gallery Image 1" />
+      <img src=".\Assets\AL Hudha\img2.jpg" alt="Gallery Image 2" />
+      <img src=".\Assets\AL Hudha\img3.jpg" alt="Gallery Image 3" />
+      <img src=".\Assets\AL Hudha\img4.jpg" alt="Gallery Image 4" />
+      <img src=".\Assets\AL Hudha\img5.jpg" alt="Gallery Image 5" />
+      <img src=".\Assets\AL Hudha\img6.jpg" alt="Gallery Image 6" />
+<img src=".\Assets\AL Hudha\img1.jpg" alt="Gallery Image 1" />
+      <img src=".\Assets\AL Hudha\img2.jpg" alt="Gallery Image 2" />
+      <img src=".\Assets\AL Hudha\img3.jpg" alt="Gallery Image 3" />
+      <img src=".\Assets\AL Hudha\img4.jpg" alt="Gallery Image 4" />
+      <img src=".\Assets\AL Hudha\img5.jpg" alt="Gallery Image 5" />
+      <img src=".\Assets\AL Hudha\img6.jpg" alt="Gallery Image 6" />
+    </div>
+  </div>
+    <p class="highlight">OUR MISSION AND VISION</p>
+    <p>Al-Hudha Orphanage, a shelter for orphans and widows.</p>
+    <p>Hadees-ord recognized by social welfare authorities.</p>
+
+    <p class="highlight">DONATE NOW</p>
+    <p>Support our mission</p>
+
+    <p class="highlight">GET INVOLVED AND MAKE A DIFFERENCE</p>
+    <p>Be a volunteer. Be a part of our cause and contribute to the development of the downtrodden. We aim to raise up the generation by supporting students throughout their careers.</p>
+
+    <div class="contact">
+      <p><strong>Phone:</strong> 0431-2340447</p>
+      <p><strong>Mobile:</strong> +91 443364640</p>
+    </div>
+
+    <div class="address">
+      <strong>Address:</strong>
+      <p>AL HUDHA Orphanage<br />
+      (Location details can be added here)</p>
+    </div>
+  </div>
+</body>
+</html>
