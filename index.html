@@ -3,108 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>VOICE Trust - Homes Overview</title>
+  <title>Donate Meals</title>
   <style>
     body {
+      background: linear-gradient(to left,rgb(247, 117, 188), #80deea);
       margin: 0;
+      padding: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
       text-align: center;
-    }
-
-    header {
-      background-color: #006400;
-      color: white;
-      padding: 1rem;
+      color: #0074cc;
     }
 
     .logo {
-      height: 80px;
+      width: 450px;
+      height: 450px;
+      border-radius: 50%;
+      margin-top: 2rem;
       margin-bottom: 1rem;
     }
 
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1.5rem;
-      margin: 2rem auto;
-      max-width: 1000px;
-      padding: 0 1rem;
-    }
-
-    .card {
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      padding: 1rem;
-      flex: 1 1 200px;
-      max-width: 220px;
-      transition: transform 0.2s ease;
-    }
-
-    .card:hover {
-      transform: scale(1.05);
-    }
-
-    .card a {
-      text-decoration: none;
-      color: #006400;
+    h2 {
+      font-size: 1.4rem;
+      margin: 0.5rem 1rem;
       font-weight: bold;
-      display: block;
-      margin-top: 0.5rem;
     }
 
-    .footer {
-      margin-top: 3rem;
-      padding: 2rem;
-      background-color: #e0ffe0;
-      border-top: 4px solid #008000;
+    p {
+      font-size: 0.95rem;
+      color: #444;
+      margin: 0.5rem 1.2rem 1.5rem;
     }
 
-    @media (max-width: 600px) {
-      .card {
-        max-width: 100%;
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      text-align: center;
+      border: 2px solid #0074cc;
+      border-radius: 25px;
+      padding: 0.7rem 1.5rem;
+      background: transparent;
+      color: #0074cc;
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0.5rem;
+      width: 80%;
+      max-width: 280px;
+      transition: all 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #0074cc;
+      color: white;
+    }
+
+    @media (min-width: 600px) {
+      h2 {
+        font-size: 1.8rem;
+      }
+      p {
+        font-size: 1rem;
       }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="logo.png" alt="VOICE Trust Logo" class="logo" />
-    <h1>Welcome to VOICE Trust Homes</h1>
-  </header>
+  <img src=".\Assets\logo.png" alt="Logo" class="logo" />
 
-  <div class="container">
-    <div class="card">
-      <h3>Grace Oldage Home</h3>
-      <a href="Grace Old-Age.html">Visit</a>
-    </div>
-    <div class="card">
-      <h3>AL HUDHA Orphanage</h3>
-      <a href="ALhuda.html">Visit</a>
-    </div>
-    <div class="card">
-      <h3>Friendship Children's Home</h3>
-      <a href="VOICETrust.html">Visit</a>
-    </div>
-    <div class="card">
-      <h3>Abirami Women Development Trust</h3>
-      <a href="Abirami.html">Visit</a>
-    </div>
-    <div class="card">
-      <h3>Hope Recovery Shelter</h3>
-      <a href="Hope.html">Visit</a>
-    </div>
-  </div>
+  <h2>Donate the foods, Got the blessings</h2>
+  <p>Bridge between donors and orphans, delivering meals with dignity.</p>
 
-  <div class="footer">
-    <p>
-      VOICE Trust is a community-driven organization working for the upliftment of the vulnerable and marginalized in Tamil Nadu. Through compassion, education, and sustainable support, we operate various homes catering to children, the elderly, women in need, and those recovering from hardship. Join us in creating a more inclusive and caring society.
-    </p>
-  </div>
+  <a href="mainpage.html" class="button">Get Started</a>
+  <a href="https://forms.gle/HFkukbzLUYK8qLTN9" class="button">போக்குவரத்து செய்பவர் பதிவு செய்ய</a>
 
 </body>
 </html>
